@@ -5,12 +5,33 @@
     android:layout_width = "match_parent"
     android:gravity = "center"
     android:background="#9C27B0"
-    android:layout_height = "match_parent"
+    android:orientation="vertical"
+    android:layout_height = "wrap_content"
     tools:context = ".MainActivity">
+
+
     <TextView
         android:id = "@+id/text"
         android:textSize = "30sp"
-        android:textColor="#fff"
+        android:textColor="@color/textColor"
         android:layout_width = "match_parent"
         android:layout_height = "match_parent" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="To UUID"
+        android:background="#747171"
+        android:onClick="move"
+        android:textColor="@color/textColor"
+        android:textSize="30sp"/>
+
+
+
+
 </LinearLayout>

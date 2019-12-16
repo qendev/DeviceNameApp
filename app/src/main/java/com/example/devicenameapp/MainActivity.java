@@ -6,9 +6,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -61,6 +63,11 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
         textView.setText(Build.DEVICE);
+    }
+
+    public void move(View view) {
+        Intent intent = new Intent(this,UUidActivity.class);
+        startActivity(intent);
     }
 }
 
